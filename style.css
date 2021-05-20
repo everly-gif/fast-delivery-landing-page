@@ -1,0 +1,270 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    color:#344fa1;
+    
+}
+
+/*body{
+background-color: #eef1fe;
+}*/
+
+/*Navbar CSS starts */
+
+.nav-links li, a{
+    font-size:16px;
+    color:#344fa1;
+    width:140px;
+    text-align:center;
+    text-decoration: none;
+
+}
+.logo{
+    margin-right:auto;
+}
+header{
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding:20px;
+}
+.nav-links{
+    list-style-type:none;
+    
+}
+.nav-links li{
+    display:inline-block;
+
+}
+#sign-in{
+    border-radius: 20px;
+    padding:8px 25px;
+    background-color: #344fa1;
+    color:#FFFFFF;
+    transition: all 0.3s ease 0s;
+}
+#sign-in:hover , .cta:hover{
+    
+    background-color: #FFFFFF;
+    border: 1px solid #344fa1;
+    color:#344fa1;
+}
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+
+}
+.nav-links li a:hover{
+    background-color: #344fa1;
+    color:#FFFFFF;
+    border-radius: 20px;
+    padding:8px 20px ;
+    border:none;
+}
+
+/*Navbar CSS ends */
+
+/*Intro div CSS starts*/
+
+.intro-div{
+    display:flex;
+    justify-content: space-between;
+    padding:40px;
+    
+}
+.intro-content{
+    padding:10px;
+}
+.cta{
+    margin: 40px 0px;
+    font-size:16px;
+    padding:10px 25px;
+    border-radius: 20px;
+    border:1px solid transparent;
+    background-color: #344fa1;
+    color:#FFFFFF;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+.toggle{
+    background-color: #d1d1d1;
+    display: flex;
+    height:30%;
+    width:30%;
+    border-radius: 20px;
+    align-items:center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.ball{
+    height:47px;
+    width:120px;
+    background-color: #ff7300;
+    position: absolute;
+    border-radius:20px;
+    opacity:0.8;
+    transition: .4s;
+}
+.text1,.text2{
+    font-weight: bold;
+    text-align:center;
+}
+.toggle-text{
+    padding:12px;
+    z-index:1;
+}
+#checkbox{
+    opacity: 0;
+    position: absolute;
+}
+#checkbox:checked + .toggle .ball{
+    transform:translateX(105px);
+    
+}
+#checkbox:checked + .toggle .text2{
+    color:#FFFFFF;
+    font-weight: 0px;
+}
+#checkbox:not(:checked) + .toggle .text1{
+    color:#FFFFFF;
+    font-weight: 0px;
+}
+.toggle-switch{
+    margin-top:2px;
+}
+
+/* Intro Div CSS ends*/
+
+/*Showcase CSS starts*/
+.showcase{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:50px;
+}
+/*Showcase CSS ends*/
+
+/*Showcase adv  css starts*/
+
+.adv , .numbers{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    padding:50px;
+}
+.adv-h{
+    color:#ff7300;
+    padding-top:13px;
+    padding-bottom: 12px;
+    font-weight: bold;
+}
+.cont{
+    
+    border-radius: 20px;
+    background-color: #ffffff;
+    cursor:pointer;
+    box-shadow:3px 3px 5px 6px #ccc;
+    transition: all  0.3s ease 0s;
+    background-image: linear-gradient(45deg, #344fa1 50%, #ffffff 50%);
+    background-size: 300% 100%;
+    background-position: right bottom;
+    transition: background-position .8s ease;
+}
+
+.inner-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    height:270px;
+    width:270px;
+    font-weight: bold;
+    text-align: center;
+}
+.image{
+  
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    height:100px;
+    
+}
+.cont:hover  {
+     
+ 
+    background-color: #344fa1;
+    background-position: left top;
+    
+}
+.cont:hover p{
+    font-weight:normal;
+    color:white;
+}
+/*Showcase adv css ends*/
+
+/* Secondary  and tertiary div  css starts */
+
+.second-div, .third-div{
+    display:flex;
+    justify-content: space-between;
+    padding:40px;
+   
+}
+.second-content,.third-content {
+    padding:10px;
+    margin-top:15px;
+}
+
+/* Secondary & Tertiary div css ends*/
+
+/*Final div starts*/
+
+.f-cont{
+    text-align: center;
+    box-shadow:3px 3px 5px 6px #ccc;
+    border-radius:20px;
+    padding:20px 8px;
+    width:270px;
+    height:120px;
+    transition: transform .8s ease;
+    cursor: pointer;
+}
+
+.f-h{
+    color:#ff7300;
+    font-weight: bold;
+}
+.f-cont:hover{
+    transform: scale(1.1);
+}
+.final{
+    margin-bottom:25px;
+}
+/*Final div ends */
+
+/*Footer CSS starts*/
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:30px;
+    margin-bottom: 30px;
+}
+footer ul{
+    list-style-type: none;
+}
+footer ul li{
+    cursor: pointer;
+}
+.foot-cont{
+    margin-top:90px;
+    line-height: 3;
+}
+
+/*Footer CSS ends*/

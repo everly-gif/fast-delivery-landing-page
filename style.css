@@ -7,9 +7,6 @@
     
 }
 
-/*body{
-background-color: #eef1fe;
-}*/
 
 /*Navbar CSS starts */
 
@@ -229,10 +226,11 @@ header{
     box-shadow:3px 3px 5px 6px #ccc;
     border-radius:20px;
     padding:20px 8px;
-    width:270px;
-    height:120px;
-    transition: transform .8s ease;
+    width:280px;
+    height:130px;
+    transition: transform .2s ease;
     cursor: pointer;
+    background-color: #FFFFFF;
 }
 
 .f-h{
@@ -249,12 +247,12 @@ header{
 
 /*Footer CSS starts*/
 
-footer{
+.footer-links{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding:30px;
     margin-bottom: 30px;
+    padding: 40px;
 }
 footer ul{
     list-style-type: none;
@@ -268,3 +266,19 @@ footer ul li{
 }
 
 /*Footer CSS ends*/
+
+/* Animation classes starts */
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity:0;
+    transition: all 2s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity:1;
+}
+
+/* Animation classes ends */
+

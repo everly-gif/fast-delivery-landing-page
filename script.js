@@ -1,13 +1,19 @@
-
+    window.onload=function(){
+        const toggleButton=document.getElementsByClassName('toggle-button')[0];
+        const nlinks= document.getElementsByClassName('r-nav')[0];
+        toggleButton.addEventListener('click', () => {
+            nlinks.classList.toggle('act');
+        })
+    }
 
     function counter(id, start, end, duration) {
-     let obj = document.getElementById(id),
+     let ele = document.getElementById(id),
       range = end - start,
       inc = end > start ? 1 : -1,
       count = Math.abs(Math.floor(duration / range)),
       timer = setInterval(() => {
        start += inc;
-       obj.textContent = start ;
+       ele.textContent = start ;
        if (start == end) {
         clearInterval(timer);
        }
@@ -41,3 +47,7 @@
        
     
    });
+   
+
+
+  

@@ -14,7 +14,7 @@
     <!--Custom styleesheet-->
 
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 
     <!--Scripts-->
     
@@ -25,10 +25,18 @@
 <body>
     <!--Header Section starts-->
 
-    <header>
-        <img src="Images/logo.png" class="logo"width=5% >
-        <nav>
-            <ul class="nav-links">
+    <nav class="navbar" >
+        <div><img src="Images/logo.png" class="logo"width=64px height=52px ></div>
+        
+        <a href ="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+     
+        <div class="r-nav" >
+            
+            <ul >
                 <li><a href="#">Corporate</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Community</a></li>
@@ -36,10 +44,12 @@
                 <li><a href="#">Contact Us</a></li>
                 <li ><a id="sign-in" href="#">Sign in</a></li>
             </ul>
-            
-        </nav>
+       
+        </div>
+    </nav>
+    
         
-    </header>
+
 
     <!--Header ends-->
     
@@ -47,7 +57,7 @@
 
     <div class="intro-div">
         <div class="intro-content">
-         <h1 style="font-size: 50px;">Local <span style="color:#ff7300;">Urgent</span> Courier<br> Delivery Services</h1>
+         <h1 class="i-h" id="i-h">Local <span style="color:#ff7300;">Urgent</span> Courier<br> Delivery Services</h1>
          <br>
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper condimentum turpis venenatis commodo. Integer auctor ante magna, vitae vestibulum nunc imperdiet sit amet. Integer auctor ante magna, vitae vestibulum nunc imperdiet sit amet.</p>
          <button class="cta">Book a delivery</button>
@@ -68,11 +78,11 @@
     <!--Showcase companies starts-->
 
     <div class="showcase reveal"  >
-     <img src="Images/avast.png" width=10%>
-     <img src="Images/buzzfeed.png" width=10%>
-     <img src="Images/bookingcom.png" width=10%>
-     <img src="Images/expedia.png" width=10%>
-     <img src="Images/dispatch.png" width=10%>
+     <img src="Images/avast.png" width=150px class="s-img">
+     <img src="Images/buzzfeed.png" width=150px class="s-img">
+     <img src="Images/bookingcom.png" width=150px class="s-img">
+     <img src="Images/expedia.png" width=150px class="s-img">
+     <img src="Images/dispatch.png" width=150px class="s-img"> 
     </div>
 
     <!--Showcase companies ends-->
@@ -92,7 +102,7 @@
             <img src="Images/Two.png" width=500px class="second-img"> 
         </div>
         <div class="second-content">
-         <h1 style="font-size: 36px;">Find Favourites and Discover<br>New Ones From Our App</h1>
+         <h1 class="i-h">Find Favourites and Discover<br>New Ones From Our App</h1>
          <br>
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper condimentum turpis venenatis commodo. Integer auctor ante magna, vitae vestibulum nunc imperdiet sit amet. Integer auctor ante magna, vitae vestibulum nunc imperdiet sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper condimentum turpis venenatis commodo. Integer auctor ante magna, vitae vestibulum nunc imperdiet sit amet.</p>
          </div>
@@ -105,7 +115,7 @@
     <div class="third-div reveal">
         
         <div class="third-content">
-         <h1 style="font-size: 36px;">Receive Your Food At<br> Your Doorstep</h1>
+         <h1  class="i-h">Receive Your Food At<br> Your Doorstep</h1>
          <br>
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper condimentum turpis venenatis commodo. Integer auctor ante magna, vitae vestibulum nunc imperdiet sit amet. Integer auctor ante magna, vitae vestibulum nunc imperdiet sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper condimentum turpis venenatis commodo.t</p>
          </div>
@@ -120,7 +130,7 @@
     <!--Final Div Starts-->
 
     <div class="final reveal">
-    <h1 style="font-size: 40px;text-align: center;">Get to Know Us</h1>
+    <h1 style="text-align: center;"class="i-h">Get to Know Us</h1>
     <div class="numbers">
     <div class="f-cont" ><h1 class="f-h" id="count1">2570k+</h1><p style="font-weight: bold;">Users Order Online</p></div>
     <div class="f-cont" ><h1 class="f-h" id="count2">177</h1><p style="font-weight: bold;">Cities and Even More on the way</p></div>
@@ -134,7 +144,7 @@
      
     <footer class="reveal">
      <div class="footer-links ">
-     <div><img src="Images/logo.png" width=40%><p>Loreum Ispum is nothing but<br> some dummy text.<br> Thank you for visiting</p></div>
+     <div class="f-img" ><img src="Images/logo.png" width=40%><p>Loreum Ispum is nothing but<br> some dummy text.<br> Thank you for visiting</p></div>
      <div class="foot-cont"><h2>Our Services</h2>
         <ul>
           <li>Pricing</li>
@@ -162,6 +172,6 @@
     </footer>
 
     <!--Footer Ends-->
-    <script></script>
+    
 </body>
 </html>

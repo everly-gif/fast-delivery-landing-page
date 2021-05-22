@@ -7,33 +7,43 @@
     
 }
 
+/* Navbar css starts*/
 
-/*Navbar CSS starts */
-
-.nav-links li, a{
-    font-size:16px;
-    color:#344fa1;
-    width:140px;
-    text-align:center;
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2px;
+}
+.r-nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.r-nav li{
+    list-style:none;
+    margin:10px;
+}
+.r-nav a{
     text-decoration: none;
-
+    padding:1rem;
+    display: block;
 }
-.logo{
-    margin-right:auto;
+.toggle-button{
+    position: absolute;
+    top:2.3rem;
+    right:1rem;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height:21px;
 }
-header{
-    display:flex;
-    justify-content: flex-end;
-    align-items:center;
-    padding:20px;
-}
-.nav-links{
-    list-style-type:none;
-    
-}
-.nav-links li{
-    display:inline-block;
-
+.toggle-button .bar{
+    height:3px;
+    width:100%;
+    border-radius: 10px;
+    background-color: black;
 }
 #sign-in{
     border-radius: 20px;
@@ -48,11 +58,11 @@ header{
     border: 1px solid #344fa1;
     color:#344fa1;
 }
-.nav-links li a{
+.r-nav li a{
     transition: all 0.3s ease 0s;
 
 }
-.nav-links li a:hover{
+.r-nav li a:hover{
     background-color: #344fa1;
     color:#FFFFFF;
     border-radius: 20px;
@@ -60,7 +70,7 @@ header{
     border:none;
 }
 
-/*Navbar CSS ends */
+/* Navbar css ends*/
 
 /*Intro div CSS starts*/
 
@@ -87,8 +97,8 @@ header{
 .toggle{
     background-color: #d1d1d1;
     display: flex;
-    height:30%;
-    width:30%;
+    height:51px;
+    width:240px;
     border-radius: 20px;
     align-items:center;
     justify-content: space-between;
@@ -116,7 +126,7 @@ header{
     position: absolute;
 }
 #checkbox:checked + .toggle .ball{
-    transform:translateX(105px);
+    transform:translateX(100%);
     
 }
 #checkbox:checked + .toggle .text2{
@@ -144,7 +154,7 @@ header{
 
 /*Showcase adv  css starts*/
 
-.adv , .numbers{
+.adv {
     display:flex;
     justify-content:space-around;
     align-items: center;
@@ -205,7 +215,14 @@ header{
 /*Showcase adv css ends*/
 
 /* Secondary  and tertiary div  css starts */
+.i-h{
+    font-size: 36px;
 
+}
+#i-h{
+    font-size: 50px;
+
+}
 .second-div, .third-div{
     display:flex;
     justify-content: space-between;
@@ -227,6 +244,7 @@ header{
     border-radius:20px;
     padding:20px 8px;
     width:280px;
+    margin:10px 25px;
     height:130px;
     transition: transform .2s ease;
     cursor: pointer;
@@ -242,6 +260,13 @@ header{
 }
 .final{
     margin-bottom:25px;
+}
+.numbers{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    
+    padding:50px;
 }
 /*Final div ends */
 
@@ -282,3 +307,202 @@ footer ul li{
 
 /* Animation classes ends */
 
+/* Responsiveness and media queries*/
+
+@media (max-width: 1024px){
+    .toggle-button{
+        display: flex;
+    }
+    .r-nav{
+        display: none;
+        width:100%;
+        padding:20px 0px;
+        z-index:100;
+        background-color: #eef2fc;
+        
+       
+
+    }
+    .r-nav li a:hover  {
+        background-color: transparent;
+        color:#ff7300;
+    }
+
+    #sign-in{
+        background-color: transparent;
+        color:#344fa1;
+        font-weight: bolder;
+    }
+    #sign-in:hover{
+        border:none;
+        background-color: transparent;
+        color:#ff7300 ;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul{
+        width:100%;
+        flex-direction: column;
+    } 
+    .r-nav li{
+        text-align: center;
+    }
+    .r-nav li a{
+        padding: .5rem 1rem;
+    }
+    .inner-cont{
+        width:200px;
+        height:200px;
+    }
+    .r-nav.act{
+    display: flex;
+    }
+    
+
+    
+   
+}
+@media only screen and (max-width: 926px){
+    .intro-div{
+        flex-direction: column;
+    }
+    .intro-img-cont{
+        order:2;
+        text-align:center;
+    }
+
+}
+@media only screen and (max-width: 966px){
+    .intro-div , .second-div,.third-div,.footer-links{
+        flex-direction: column;
+        
+    }
+   
+    .intro-img-cont, .intro-img{
+        opacity:0;
+        display:none;
+    }
+    .second-img-cont{
+        order:2;
+        text-align: center;
+    }
+    .adv{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:0;
+        
+    }
+    .third-img, .second-img{
+        margin-top:40px;
+        width:65%;
+       
+
+    }
+    .third-img-cont{
+        text-align: center;
+    }
+    .cont{
+        padding:10px;
+        margin:0px;
+        margin:20px 10px;
+    }
+    .footer-links{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    .inner-cont{
+        width:65vw;
+        height:auto;
+        
+    }
+    .f-cont{
+        width:200px;
+        height:150px;
+        }
+    .foot-cont{
+        margin-top:10px;
+    }
+    footer{
+        background-color: #eef2fc;
+        padding: 10px;
+    }
+    
+    
+}
+@media only screen and (max-width: 990px){
+    .numbers{
+        flex-wrap:wrap;
+        
+    }
+   .f-cont{
+    margin:20px 10px;
+   }
+   .second-div{
+       flex-direction: column;
+
+   }
+   .second-img-cont{
+    order:2;
+    text-align: center;
+}
+  .adv{
+      flex-wrap: wrap;
+  }
+  .cont{
+    margin:20px 10px;
+  }
+}
+@media  screen and (max-width: 1259px){
+    .adv{
+        flex-wrap: wrap;
+    }
+    .cont{
+      margin:20px 5px;
+    }
+}
+@media only screen and (max-width: 520px){
+    .footer-links{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: flex-start;
+    }
+}
+@media only screen and (max-width: 1094px){
+  .showcase{
+      flex-wrap: wrap;
+      
+  }
+  .s-img{
+      margin: 20px 10px;
+  }
+}
+@media only screen and (max-width: 602px){
+    .showcase{
+        background-color: #eef2fc;
+
+    }
+    .f-img{
+        margin-top: 10px;
+    }
+    .adv{
+        padding-top: 20px;
+    }
+
+}
+@media only screen and (max-width: 610px){
+    .i-h{
+        font-size:30px;
+    }
+    #i-h{
+        font-size:30px;
+    }
+   
+    .intro-content, .second-content,.third-content p{
+        font-size:14px;
+    }
+}

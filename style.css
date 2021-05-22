@@ -63,11 +63,10 @@
 
 }
 .r-nav li a:hover{
-    background-color: #344fa1;
-    color:#FFFFFF;
-    border-radius: 20px;
-    padding:8px 20px ;
-    border:none;
+    
+    transform: scale(1.2);
+    color:#ff7300;
+    
 }
 
 /* Navbar css ends*/
